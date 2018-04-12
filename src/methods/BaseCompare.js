@@ -31,8 +31,9 @@ export default class BaseCompare {
   }
 
 
-  createResultReport(misMatchPercentage, isWithinMisMatchTolerance, isSameDimensions) {
+  createResultReport(filePath = null, misMatchPercentage, isWithinMisMatchTolerance, isSameDimensions) {
     return {
+      filePath,
       misMatchPercentage,
       isWithinMisMatchTolerance,
       isSameDimensions,
